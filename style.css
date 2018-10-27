@@ -3,6 +3,11 @@ body {
 	padding:0;
 	font-family: roboto;
 }
+
+*{
+	outline: none;
+}
+
 #topmenu {
 	width: calc(100% - 100px);
 	background-color: black;
@@ -108,12 +113,127 @@ body {
 	position:relative;
 }
 
+#welcome {
+	padding-top: 50px;
+	overflow: hidden;
+}
+
 #welcome h1 {
-	color:grey;
+	color:black;
 	text-transform: uppercase;
 	padding-top: 20px;
 }
 
-#welcome p,h1 {
+#welcome p, #welcome h1 {
 	padding:5px 30px 0px 100px;
+}
+
+#welcome p {
+	line-height: 26px;
+    font-weight: 400;
+    color: #505050;
+    font-family: Roboto;
+    font-size: 14px;	
+}
+
+#welcomerow {
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 40px;
+	display:flex;
+	justify-content: space-around;
+}
+
+#welcomerow h2 {
+	font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    font-weight: 600;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+#events {
+	overflow: hidden;
+	padding:100px;
+}
+
+#aview {
+	line-height: 34px;
+    height: 36px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: none;
+    border: 1px solid black;
+}
+
+#aview:hover {
+	background-color: #003399;
+	color: white;
+	cursor: pointer;
+}
+
+.article {
+	overflow: hidden;
+    border-top: 1px solid #eee;
+    padding: 50px 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tsec_block h5{
+	font-size: 15px;
+   color: #777777;
+}
+.tsec_block{
+	text-align: center;
+	height:697px;
+	width:25%;
+}
+
+.cont3{
+	width: 1110px;
+	margin: auto;
+	padding: auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
+.cont3 h5 {
+	color:#777;
+	font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+	margin:0px;
+	padding:0px;
+}
+
+.tsec_block_first,.tsec_block_second,
+.tsec_block_third,.tsec_block_four{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.tsec_block_first h3:hover{
+	color: #00ff8c;
+	cursor: pointer;
+}
+.tsec_block_first img:hover{
+	color: #00ff8c;
+	cursor: pointer;
+}
+.tsec_block_second h3:hover{
+	color: #00ff8c;
+	cursor: pointer;
+}
+.tsec_block_third h3:hover{
+	color: #00ff8c;
+	cursor: pointer;
+}
+.tsec_block_four h3:hover{
+	color: #00ff8c;
+	cursor: pointer;
 }
