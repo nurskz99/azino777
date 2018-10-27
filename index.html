@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>MIT Course</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="script" href="script.jx" defer>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+	<script src="script.js" defer></script>
 </head>
 <body>
 
-	<section id="header">
-		<div>
-			<div id="logo"><h2>HALO</h2></div>
-			<nav id="menu">
+	<section id="topmenu">
+		<div id="tpRow">
+			<div style="float:left;">
 				<ul>
-					<li> <a href="#">HOME</a> </li>
-					<li> <a href="#">ABOUT US</a> </li>
-					<li> <a href="#">SERVICES</a> </li>
-					<li> <a href="#">PORTFOLIO</a> </li>
-					<li> <a href="#">BLOG</a> </li>
-					<li> <a href="#">CONTACT</a> </li>
+					<li><a href="#">Have any queston?</a></li>
+					<li><a href="#">(00) 123 456 789</a></li>
+					<li><a href="#">hello@eduma.com</a></li>
 				</ul>
-			</nav>
-		</div>
-		<div id="titleHALO">
-			<h2 id="haloBig">HALO</h2>
-			<p id="subTitle">We Create Awesome <br>Photographies and more</p>
+			</div>
+			<div style="float:right;">
+				<ul>
+					<li><a href="#">Register</a></li>
+					<li style="color:#212121;">|</li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
 		</div>
 	</section>
-	
+
+	<section id="mainmenu">
+		<div>
+			<div style="float:left;">
+				<img src="img/logo.png" />
+			</div>
+			<div style="float:right;">
+				<div>
+					<ul style="float:left;">
+						<li id="active"><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Staff</a></li>
+						<li><a href="#">Students</a></li>
+						<li><img style="margin: 0 5px;" src="img/search.png" width="15px" alt="search" /></li>
+						<li id="registerNow"><a href="">Register now</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<img class="mySlides" src="img/slide1.jpg" style="width:100%">
+			<img class="mySlides" src="img/slide2.jpg" style="width:100%">
+			<img class="mySlides" src="img/slide3.jpg" style="width:100%">
+
+			<button class="button left" onclick="plusDivs(-1)"><span>&#10094;</span></button>
+			<button class="button right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+	</section>
 
 </body>
 </html>

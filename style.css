@@ -1,61 +1,108 @@
 body {
-	margin:0px;
-	width:100%;
-	font-family: "Open Sans","sans serif";
+	margin:0;
+	padding:0;
+	font-family: roboto;
+}
+#topmenu {
+	width: calc(100% - 100px);
+	background-color: black;
+	padding: 0px 50px;
+	display: block;
+	top:0;
+	left:0;
+	overflow: hidden;
 }
 
-#menu {
-	float:right;
-}
-
-#menu ul {
+#topmenu ul, #mainmenu ul {
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: bold;
 	position: relative;
 	text-align:center;
 }
 
-#menu a {
+
+#topmenu a {
 	text-decoration:none;
 	color:white;
 }
 
-#menu li {
+#topmenu li, #mainmenu li {
 	float: left;
-	margin:25px;
+	margin:5px;
 }
 
-#logo {
-	color:white;
+#mainmenu {
+	width: 100%;
+	padding: 20px 100px;
+	width: calc(100% - 200px);
+	overflow: hidden;
+}
+
+#mainmenu img {
+	max-width: 100px;
+}
+
+#mainmenu a {
+	text-decoration:none;
+	color:grey;
+	font-size: 14px;
+}
+
+#mainmenu a:hover {
+	text-decoration:none;
+	color:#003399;
+}
+
+#registerNow {
 	float:left;
 }
 
-#header {
-	background-image:  linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url("img/1.jpg");
-	padding:30px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height:700px;
-}
-
-#titleHALO {
-	padding-top:50px;
-}
-
-#haloBig {
-	font-size:130px;
+#registerNow a {
+	margin-left: 10px;
 	color:white;
-	font-weight:300;
-	opacity: 1;
-	margin-bottom:0px;
+	background-color: #003399;
+	border-radius: 20px;
+	padding: 5px 15px;
+	text-transform: uppercase;
 }
 
-#subTitle {
-	color: white;
-    font-size: 60px;
-    line-height: 1.4;
-    position: relative;
+#registerNow a:hover {
+	background-color: blue;
+	color:white;
+}
+
+#active a {
+	color:#003399;
+}
+.mySlides {
+	display:none;
+}
+.button:hover {
+	background-color: grey;
+}
+.button {
+	color: white; 
+	background-color: rgba(51, 170, 51, .1);
+	position: absolute; 
+	top: 50%;
+	width: 100px;
+	height: 100px;
+	font-size: 20px;
+	border-radius: 50%;
+	font-size: 24px;
+}
+
+.left {
+	left: 4%;
+
+}
+.right {
+	right: 4%;
+}
+.container {
+	width:100%;
+	margin:50px auto;
+	position:relative;
 }
